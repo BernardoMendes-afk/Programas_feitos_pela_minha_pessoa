@@ -1,42 +1,28 @@
-produto = int(input("Indique o indigo do produto: "))
-quantidade = int(input("Indique a quantidade desse produto a ser comprada: "))
-if produto == 0:
-    print("Código inválido")
+a_pagar = 0
+while True:
+    codigo = int(input("Código do produto (0 para sair): "))
+    preco = 0
+    if codigo == 0:
+        break
+    elif codigo == 1:
+        preco = 0.5
+    elif codigo == 2:
+        preco = 1
+    elif codigo == 3:
+        preco = 4
+    elif codigo == 5:
+        preco = 7
+    elif codigo == 9:
+        preco = 8
+    else:
+        print("Código inválido!")
+    if preco != 0:
+        quantidade = int(input("Quantidade: "))
+        a_pagar = a_pagar + (preco * quantidade)
+        print(f"Total a pagar R${apagar:.2f}")
 
- while produto != 0:
-  if produto == 1:
-      preco = produto * 0,5
-      quantidade = quantidade + 1
-      int(input("Indique o indigo do produto: "))
-      int(input("Indique a quantidade desse produto a ser comprada: "))
 
-  elif produto == 2:
-      preco = produto
-      quantidade = quantidade + 1
-      int(input("Indique o indigo do produto: "))
-      int(input("Indique a quantidade desse produto a ser comprada: "))
 
-  elif produto == 3:
-      preco = produto
-      quantidade = quantidade + 4
-      int(input("Indique o indigo do produto: "))
-      int(input("Indique a quantidade desse produto a ser comprada: "))
-
-  elif produto == 5:
-      preco = produto
-      quantidade = quantidade + 7
-      int(input("Indique o indigo do produto: "))
-      int(input("Indique a quantidade desse produto a ser comprada: "))
-
-  elif produto == 9:
-      preco = produto
-      quantidade = quantidade + 8
-      int(input("Indique o indigo do produto: "))
-      int(input("Indique a quantidade desse produto a ser comprada: "))
-
-  elif produto == 0:
-
-     break
 
 
 
